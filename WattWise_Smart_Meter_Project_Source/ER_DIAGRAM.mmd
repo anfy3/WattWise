@@ -1,0 +1,9 @@
+erDiagram
+    ROLES ||--o{ USERS : assigns
+    USERS ||--o| CONSUMERS : owns
+    CONSUMERS ||--o{ METERS : has
+    METERS ||--o{ READINGS : records
+    CONSUMERS ||--o{ BILLS : receives
+    BILLS ||--o{ PAYMENTS : has
+    METERS ||--o{ ALERTS : generates
+    USERS ||--o{ AUDIT_LOGS : performs
